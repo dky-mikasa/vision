@@ -51,3 +51,23 @@ make
 Then copy the built `robot_interface.XXX.so` file to the main directory (where you can see this README.md file).
 
 To deploy visual-policy, we should also set up Intel RealSense interface. Please check detailed instruction on [Librealsense](https://github.com/IntelRealSense/librealsense)
+
+### (Optional) Convert pytorch policy to tensorrt policy
+```
+# Current 
+bash a1_hardware/convert_tensor_rt/convert_trt.sh $EXP_ID $SEED $LOG_ROOT_PATH
+```
+
+
+
+### Run trained policy on the robot.
+```
+# For Tensor RT Version
+python a1_hardware/execute_locotransformer_trt.py
+
+# For Pytorch Version
+python a1_hardware/execute_locotransformer.py
+```
+**We use joint control for A1, the default action and action scale are predefined. Normalization information for depth input is also predefined.**
+
+**Some system path and configuration may varies, please modify accordingly.**
