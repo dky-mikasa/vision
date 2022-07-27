@@ -17,7 +17,9 @@ python starter/ppo_locotransformer.py \
   --log_dir {YOUR_LOG_DIR} \
   --id {YOUR_ID}
 ```
+
 出现问题，u need to install mpc_osqp
+
 to run PPO+LocoTransformer on the environment, `thin-goal`. And you can use
 
 ```
@@ -27,7 +29,9 @@ python starter/locotransformer_viewer.py \
   --id {YOUR_ID} \
   --env_name A1MoveGround
 ```
+
 出现问题，u need to install mpc_osqp
+
 to test the trained model on the same environment.
 
 ## Real Robot Deployment
