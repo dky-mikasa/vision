@@ -18,7 +18,7 @@ python starter/ppo_locotransformer.py \
   --id {YOUR_ID}
 ```
 
-运行该段代码后出现问题，u need to install mpc_osqp
+运行该段指令后出现问题，u need to install mpc_osqp
 
 to run PPO+LocoTransformer on the environment, `thin-goal`. And you can use
 
@@ -30,7 +30,7 @@ python starter/locotransformer_viewer.py \
   --env_name A1MoveGround
 ```
 
-运行该段代码后出现同样问题，u need to install mpc_osqp
+运行该段指令后出现同样问题，u need to install mpc_osqp
 
 to test the trained model on the same environment.
 
